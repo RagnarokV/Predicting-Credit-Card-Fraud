@@ -1,0 +1,4 @@
+.DS_Store
+
+# data, unnecessary, download from kaggle
+container/local_test/test_dir/input/data/training/creditcard.csv

@@ -1,0 +1,15 @@
+Exception during training: "['Class'] not found in axis"
+Traceback (most recent call last):
+  File "/opt/program/train", line 61, in train
+    X_train, y_train = preprocess(data)
+  File "/opt/program/train", line 39, in preprocess
+    X = data.drop(columns=target_class_name, axis=1)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['Class'] not found in axis"
